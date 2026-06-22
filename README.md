@@ -1,6 +1,6 @@
 # Kafu People Backend
 
-Content management and registration API for Kafu People — built with [Bush.js](https://bushjs.dev) (TypeScript, Node.js, MongoDB).
+Content management and registration API for Kafu People — built with [Bush.js](https://www.npmjs.com/package/bushjs) (TypeScript, Node.js, MongoDB).
 
 ## Tech Stack
 
