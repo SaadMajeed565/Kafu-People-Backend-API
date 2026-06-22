@@ -1,0 +1,16 @@
+import { Command, Application } from 'bushjs';
+
+export class {{class}}Command extends Command {
+  signature = '{{class}}';
+  description = 'Describe the purpose of this command.';
+  protected app: Application;
+
+  constructor(app: Application) {
+    super();
+    this.app = app;
+  }
+
+  async handle(args: string[]): Promise<void> {
+    console.log('Command executed:', args);
+  }
+}

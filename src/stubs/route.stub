@@ -1,0 +1,7 @@
+import { Application } from 'bushjs';
+
+export function registerRoutes(app: Application) {
+  app.get('/', (request, response) => {
+    response.json({ message: 'Hello from Bush.js' });
+  });
+}

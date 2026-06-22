@@ -1,0 +1,23 @@
+import { Controller, Request, Response } from 'bushjs';
+
+export class {{class}} extends Controller {
+  async index(request: Request, response: Response) {
+    response.json({ message: 'List all' });
+  }
+
+  async show(request: Request, response: Response) {
+    response.json({ message: `Show ${request.params.id}` });
+  }
+
+  async store(request: Request, response: Response) {
+    response.status(201).json({ message: 'Created' });
+  }
+
+  async update(request: Request, response: Response) {
+    response.json({ message: `Updated ${request.params.id}` });
+  }
+
+  async destroy(request: Request, response: Response) {
+    response.json({ message: `Deleted ${request.params.id}` });
+  }
+}

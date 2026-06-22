@@ -1,0 +1,23 @@
+import { Policy } from 'bushjs';
+
+export class {{class}} implements Policy {
+  async viewAny(user: any): Promise<boolean> {
+    return true;
+  }
+
+  async view(user: any, model: any): Promise<boolean> {
+    return true;
+  }
+
+  async create(user: any): Promise<boolean> {
+    return true;
+  }
+
+  async update(user: any, model: any): Promise<boolean> {
+    return true;
+  }
+
+  async delete(user: any, model: any): Promise<boolean> {
+    return true;
+  }
+}

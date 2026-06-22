@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "rootDir": "./",
+    "outDir": "./dist",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["app/*"],
+      "@routes/*": ["routes/*"],
+      "@config/*": ["config/*"],
+      "@database/*": ["database/*"]
+    }
+  },
+  "include": ["src/**/*", "app/**/*", "routes/**/*", "config/**/*", "database/**/*", "scripts/**/*"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}

@@ -1,0 +1,17 @@
+import { FormRequest, Request } from 'bushjs';
+
+export class {{class}} extends FormRequest {
+  protected rules(): Record<string, string[]> {
+    return {
+      // name: ['required', 'string', 'min:2'],
+    };
+  }
+
+  protected messages(): Record<string, string> {
+    return {};
+  }
+
+  async authorize(request: Request): Promise<boolean> {
+    return true;
+  }
+}

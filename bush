@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+require('bushjs/core/Console/cli.js');

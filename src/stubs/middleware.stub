@@ -1,0 +1,7 @@
+import { Middleware, Request, Response } from 'bushjs';
+
+export class {{class}} extends Middleware {
+  async handle(request: Request, response: Response, next: () => Promise<void>): Promise<void> {
+    await next();
+  }
+}
